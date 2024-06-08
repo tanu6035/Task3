@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>TO-DO App</h1>
+    <form id="task-form">
+        <label>Task:</label>
+        <input type="text" id="task-input" placeholder="Add a new task" required>
+        <label>Set Priority:</label>
+        <select id="priority-select">
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+        </select>
+        <button type="submit">Add Task</button>
+    </form>
+    <ul id="task-list"></ul>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

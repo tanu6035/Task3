@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('background1.jfif') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.8); /* Set transparency */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    max-width: 100%;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#task-input, #priority-select, button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#task-input:focus, #priority-select:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+button {
+    background: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+#task-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.9); /* Set transparency */
+    transition: background-color 0.3s;
+}
+
+.task-item:hover {
+    background-color: rgba(241, 241, 241, 0.9); /* Adjust hover color transparency */
+}
+
+.task-item .task-text {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.task-item.completed .task-text {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.task-item .actions {
+    display: flex;
+    gap: 10px;
+}
+
+.task-item .priority {
+    font-size: 12px;
+    padding: 3px 7px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.priority-low {
+    background: #28a745;
+    color: white;
+}
+
+.priority-medium {
+    background: #ffc107;
+    color: white;
+}
+
+.priority-high {
+    background: #dc3545;
+    color: white;
+}
+
+.complete, .edit, .delete {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    background-color: #0056b3;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.complete:hover {
+    background-color: rgba(224, 224, 224, 0.8); /* Adjust hover color transparency */
+}
+
+.edit:hover {
+    background-color: rgba(255, 235, 170, 0.8); /* Adjust hover color transparency */
+}
+
+.delete:hover {
+    background-color: rgba(248, 215, 218, 0.8); /* Adjust hover color transparency */
+}
